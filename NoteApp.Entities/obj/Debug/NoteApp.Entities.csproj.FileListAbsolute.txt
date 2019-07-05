@@ -1,0 +1,6 @@
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.Entities\bin\Debug\NoteApp.Entities.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.Entities\bin\Debug\NoteApp.Entities.pdb
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.Entities\obj\Debug\NoteApp.Entities.csprojAssemblyReference.cache
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.Entities\obj\Debug\NoteApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.Entities\obj\Debug\NoteApp.Entities.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.Entities\obj\Debug\NoteApp.Entities.pdb

@@ -1,0 +1,16 @@
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\NoteApp.DataAccesLayer.dll.config
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\NoteApp.DataAccesLayer.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\NoteApp.DataAccesLayer.pdb
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\EntityFramework.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\FakeData.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\NoteApp.Entities.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\NoteApp.Entities.pdb
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\EntityFramework.xml
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\bin\Debug\FakeData.pdb
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\obj\Debug\NoteApp.DataAccesLayer.csprojAssemblyReference.cache
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\obj\Debug\NoteApp.DataAccesLayer.csproj.CoreCompileInputs.cache
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\obj\Debug\NoteApp.DataAccesLayer.csproj.CopyComplete
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\obj\Debug\NoteApp.DataAccesLayer.dll
+C:\Users\bilal\source\repos\Hazirlik\NoteAppSolution\NoteApp.DataAccesLayer\obj\Debug\NoteApp.DataAccesLayer.pdb
