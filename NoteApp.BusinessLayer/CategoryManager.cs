@@ -16,5 +16,9 @@ namespace NoteApp.BusinessLayer
         {
             return repo_cat.List();
         }
+        public Category GetCategoryById(int id)
+        {
+            return repo_cat.Find(x => x.Id == id);
+        }
     }
 }
