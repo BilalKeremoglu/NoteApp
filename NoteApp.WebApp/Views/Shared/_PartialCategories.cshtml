@@ -1,0 +1,16 @@
+﻿@using NoteApp.BusinessLayer
+@using NoteApp.Entities
+
+@{ 
+    CategoryManager cm = new CategoryManager();
+    List<Category> list = cm.GetCategories();
+}
+<p class="lead">KATEGORİLER</p>
+<div class="list-group">
+    <a href="/Home/Index" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span>Tümü 1</a>
+    @foreach (Category cat in list)
+    {
+        <a href="/Category/Select/@cat" title="@cat.Description" class="list-group-item"><span class="glyphicon glyphicon-arrow-right"></span>@cat.Title</a>
+    }
+
+</div>

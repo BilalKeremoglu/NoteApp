@@ -11,8 +11,8 @@ namespace NoteApp.WebApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            BusinessLayer.Test test = new BusinessLayer.Test();
-            test.CommentTest();
+            //BusinessLayer.Test test = new BusinessLayer.Test();
+            //test.CommentTest();
             return View();
         }
     }
