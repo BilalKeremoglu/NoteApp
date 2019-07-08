@@ -5,33 +5,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NoteApp.BusinessLayer
+namespace NoteApp.DataAccesLayer.EntityFramework
 {
     public class RepositoryBase
     {
         //nesnenin 1 kere oluşumunu sağlamak için gereken kalıp "singleton pattern"
-        private static DatabaseContext _db;
+        protected static DatabaseContext context;
         private static object _lockSync = new object();
 
         protected RepositoryBase()
         {
-
+           CreateContext();
         }
 
-        public static DatabaseContext CreateContext()
+        private static void CreateContext()
         {
-            if(_db == null)
+            if(context == null)
             {
                 lock (_lockSync)
                 {
-                    if (_db == null)
+                    if (context == null)
                     {
-                        _db = new DatabaseContext();
+                        context = new DatabaseContext();
                     }
                 }
             }
 
-            return _db;
         }
     }
 }

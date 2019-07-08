@@ -1,4 +1,5 @@
-﻿using NoteApp.Entities;
+﻿using NoteApp.DataAccesLayer.EntityFramework;
+using NoteApp.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

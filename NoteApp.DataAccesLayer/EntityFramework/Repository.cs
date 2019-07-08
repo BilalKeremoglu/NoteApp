@@ -1,4 +1,5 @@
 ﻿using NoteApp.DataAccesLayer;
+using NoteApp.DataAccesLayer.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,20 +8,19 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NoteApp.BusinessLayer
+namespace NoteApp.DataAccesLayer.EntityFramework
 {
-    public class Repository<T> where T:class
+    public class Repository<T> : RepositoryBase, IRepository<T> where T:class
     {
-        private DatabaseContext db;
-
         //sürekli Set<T> yazmak yerine
         private DbSet<T> _objectset;
         //constructor da bir kere atamay yapıp objectset kullanıyoruz.
         public Repository()
         {
-            db = RepositoryBase.CreateContext();
-            _objectset = db.Set<T>();
+            _objectset = context.Set<T>();
         }
+
+
         
         public List<T> List()
         {
@@ -51,7 +51,7 @@ namespace NoteApp.BusinessLayer
 
         public int Save()
         {
-            return db.SaveChanges();
+            return context.SaveChanges();
         }
 
         public T Find(Expression<Func<T, bool>> where)

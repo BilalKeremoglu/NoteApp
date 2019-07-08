@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NoteApp.DataAccesLayer
+namespace NoteApp.DataAccesLayer.EntityFramework
 {
     public class DatabaseContext : DbContext
     {
