@@ -27,6 +27,13 @@ namespace NoteApp.DataAccesLayer.EntityFramework
             return _objectset.ToList();
         }
 
+        //controllerda orderby kullanırsak c# ile sıralama yapmış oluyoruz
+        //ancak burda IQueryble bir sorgu oluşturarak sql tarafında sıralayabiliriz.
+        public IQueryable<T> ListQueryable()
+        {
+            return _objectset.AsQueryable<T>();
+        }
+
         public List<T> List(Expression<Func<T,bool>> where)
         {
             return _objectset.Where(where).ToList();

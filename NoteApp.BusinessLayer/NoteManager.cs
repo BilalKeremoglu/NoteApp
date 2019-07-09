@@ -16,5 +16,10 @@ namespace NoteApp.BusinessLayer
         {
             return repo_note.List();
         }
+
+        public IQueryable<Note> GetAllNotesQueryble()
+        {
+            return repo_note.ListQueryable();
+        }
     }
 }

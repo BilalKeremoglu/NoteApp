@@ -1,5 +1,6 @@
 ﻿using NoteApp.BusinessLayer;
 using NoteApp.Entities;
+using NoteApp.WebApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,9 @@ namespace NoteApp.WebApp.Controllers
             NoteManager nm = new NoteManager();
 
             
-            return View(nm.GetAllNotes());
+            return View(nm.GetAllNotes().OrderByDescending(x=>x.ModifiedOn).ToList());
+            //return View(nm.GetAllNotes().OrderByDescending(x => x.ModifiedOn).ToList());
+
         }
 
         public ActionResult ByCategory(int? id)
@@ -48,7 +51,57 @@ namespace NoteApp.WebApp.Controllers
                 //return RedirectToAction("Index,"Home");
             }
 
-            return View("Index",cat.Notes);
+            return View("Index",cat.Notes.OrderByDescending(x=>x.ModifiedOn).ToList());
+        }
+
+        public ActionResult MostLiked()
+        {
+            NoteManager nm = new NoteManager();
+            return View("Index",nm.GetAllNotes().OrderByDescending(x => x.LikeCount).ToList());
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Login()
+        {
+            //Giriş kontrolü ve yönlendirme
+            //Session'a kullanıcı bilgi saklama
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(LoginViewModel model)
+        {
+
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            //kullanıcı username kontrlü
+            //kullanıcı e posta kontrolü
+            //kayıt işlemi
+            //aktivasyon e postası gönderimi
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(RegisterViewModel model)
+        {
+            return View();
+        }
+
+        public ActionResult UserActivate(Guid activate_id)
+        {
+            //Kullanıcı aktivasyonu sağlanacak
+            return View();
+        }
+
+        public ActionResult Logout()
+        {
+            return View();
         }
     }
 }
