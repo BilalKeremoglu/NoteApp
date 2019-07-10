@@ -80,17 +80,36 @@ namespace NoteApp.WebApp.Controllers
 
         public ActionResult Register()
         {
-            //kullanıcı username kontrlü
-            //kullanıcı e posta kontrolü
-            //kayıt işlemi
-            //aktivasyon e postası gönderimi
             return View();
         }
 
         [HttpPost]
         public ActionResult Register(RegisterViewModel model)
         {
-            return View();
+            //kullanıcı username kontrlü
+            //kullanıcı e posta kontrolü
+            //kayıt işlemi
+            //aktivasyon e postası gönderimi
+
+            if (ModelState.IsValid)
+            {
+                bool hasError = false;
+
+                if (model.Username == "aaa")
+                {
+                    ModelState.AddModelError("", "Kullanıcı adı kullanılıyor.");
+                    hasError = true;
+                }
+
+                if (hasError == true)
+                {
+                    return View(model);
+                }
+
+                return RedirectToAction("RegisterOk");
+            }
+
+            return View(model);
         }
 
         public ActionResult UserActivate(Guid activate_id)
@@ -100,6 +119,11 @@ namespace NoteApp.WebApp.Controllers
         }
 
         public ActionResult Logout()
+        {
+            return View();
+        }
+
+        public ActionResult RegisterOk()
         {
             return View();
         }
